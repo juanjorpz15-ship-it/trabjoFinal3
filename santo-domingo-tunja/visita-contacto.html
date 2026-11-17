@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ubicación, cómo llegar y formulario de consulta.">
+    <title>Visita y contacto · Iglesia de Santo Domingo, Tunja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+
+    <header>
+        <div class="contenedor">
+            <a class="marca" href="index.html">Santo Domingo<small>Tunja, Boyacá</small></a>
+            <button id="boton-menu" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+            <nav id="menu" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="la-iglesia.html">La iglesia</a></li>
+                    <li><a href="patrimonio.html">Patrimonio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="actualidad.html">Actualidad</a></li>
+                    <li><a href="visita-contacto.html" aria-current="page">Visita y contacto</a></li>
+                    <li><a href="museo-virtual.html">Museo virtual</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <div class="cabecera-pagina">
+            <div class="contenedor">
+                <p class="migas"><a href="index.html">← Volver al inicio</a></p>
+                <h1>Visita y contacto</h1>
+                <p>Ubicación, cómo llegar y formulario de consulta.</p>
+            </div>
+        </div>
+
+        <section class="bloque">
+            <div class="contenedor dos-col">
+                <div>
+                    <h2>Cómo llegar</h2>
+                    <div class="datos">
+                        <dl>
+                            <dt>Ciudad</dt>
+                            <dd>Tunja, Boyacá, Colombia</dd>
+                            <dt>Zona</dt>
+                            <dd>Centro histórico</dd>
+                            <dt>Teléfono</dt>
+                            <dd>(+57) 608 7423606</dd>
+                        </dl>
+                    </div>
+
+                    <p>El templo está en el centro histórico de Tunja. Puedes ubicarlo en el mapa y consultar la ruta
+                        desde tu punto de partida.</p>
+                    <p><a class="boton" href="https://www.google.com/maps/search/Iglesia+de+Santo+Domingo+Tunja"
+                            target="_blank" rel="noopener">Abrir en el mapa</a></p>
+                    <p>Los horarios de celebración se publicarán cuando exista una fuente oficial confiable.</p>
+                </div>
+                <div>
+                    <h2>Envíanos una consulta</h2>
+                    <form id="formulario" novalidate>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" aria-describedby="error-nombre" required>
+                            <span class="error" id="error-nombre"></span>
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" aria-describedby="error-apellido" required>
+                            <span class="error" id="error-apellido"></span>
+                        </div>
+                        <div>
+                            <label for="celular">Celular</label>
+                            <input type="tel" id="celular" name="celular" aria-describedby="error-celular" required>
+                            <span class="error" id="error-celular"></span>
+                        </div>
+                        <div>
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" aria-describedby="error-correo" required>
+                            <span class="error" id="error-correo"></span>
+                        </div>
+                        <div class="completo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" aria-describedby="error-mensaje" required></textarea>
+                            <span class="error" id="error-mensaje"></span>
+                        </div>
+                        <div class="completo"><button class="boton" type="submit">Enviar consulta</button></div>
+                    </form>
+                    <p id="estado-form" role="status">Consulta validada. Este sitio es un proyecto académico y todavía
+                        no envía mensajes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bloque" style="padding-top:0">
+            <div class="contenedor">
+                <h2>Preguntas frecuentes</h2>
+                <details>
+                    <summary>¿Cuáles son los horarios?</summary>
+                    <p>Aún no hay una fuente oficial verificada, por eso no se publican horarios.</p>
+                </details>
+                <details>
+                    <summary>¿Dónde queda el templo?</summary>
+                    <p>En el centro histórico de Tunja, Boyacá.</p>
+                </details>
+                <details>
+                    <summary>¿Ya puedo recorrer el museo virtual?</summary>
+                    <p>Todavía no. Es un espacio que se incorporará en una etapa posterior.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="pie-grid">
+                <div>
+                    <h2>Iglesia de Santo Domingo</h2>
+                    <p>Centro histórico de Tunja, Boyacá, Colombia.</p>
+                    <p>Teléfono: 31258633870</p>
+                </div>
+                <nav aria-label="Pie de página">
+                    <h2>Navegación</h2>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="la-iglesia.html">La iglesia</a></li>
+                        <li><a href="patrimonio.html">Patrimonio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="actualidad.html">Actualidad</a></li>
+                        <li><a href="visita-contacto.html">Visita y contacto</a></li>
+                        <li><a href="museo-virtual.html">Museo virtual</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2>Créditos</h2>
+                    <p>Textos basados en las fuentes citadas en <a href="la-iglesia.html#fuentes">La iglesia</a>.
+                        Fotografías: ver créditos en la <a href="galeria.html">Galería</a>. Tipografías: Google Fonts.
+                    </p>
+                </div>
+            </div>
+            <p class="legal">Proyecto académico de Diseño Web · Sin vínculo oficial con la parroquia · Grupo: [nombres
+                de los integrantes]</p>
+        </div>
+    </footer>
+    <script src="js/principal.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>

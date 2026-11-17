@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elementos documentados del patrimonio de la Iglesia de Santo Domingo de Tunja.">
+    <title>Patrimonio · Iglesia de Santo Domingo, Tunja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header>
+    <div class="contenedor">
+        <a class="marca" href="index.html">Santo Domingo<small>Tunja, Boyacá</small></a>
+        <button id="boton-menu" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+        <nav id="menu" aria-label="Principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="la-iglesia.html">La iglesia</a></li>
+            <li><a href="patrimonio.html" aria-current="page">Patrimonio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="actualidad.html">Actualidad</a></li>
+            <li><a href="visita-contacto.html">Visita y contacto</a></li>
+            <li><a href="museo-virtual.html">Museo virtual</a></li>
+        </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="contenido">
+    <div class="cabecera-pagina">
+        <div class="contenedor">
+            <p class="migas"><a href="index.html">← Volver al inicio</a></p>
+            <h1>Patrimonio</h1>
+            <p>Tres elementos del templo, presentados como fichas de archivo.</p>
+        </div>
+    </div>
+
+    <section class="bloque">
+        <div class="contenedor">
+            <h2>Fichas del templo</h2>
+            <p>Toca o presiona una ficha para abrirla y volver a tocarla para cerrarla.</p>
+            <div class="fichas">
+            <article class="ficha-item">
+                <figure><img src="images/interior2.jpg" alt="Interior de la Capilla del Rosario" loading="lazy"></figure>
+                <h3><button class="ficha" data-rotulo="FICHA 01" aria-expanded="false" aria-controls="ficha-1"><span class="nombre">Capilla del Rosario</span><span class="pista">Toca para abrir la ficha</span></button></h3>
+                <div class="ficha-detalle" id="ficha-1" hidden>
+                    <p>Es la capilla más conocida del templo. Lonely Planet la presenta como la «Capilla Sixtina del arte neogranadino» por la riqueza de su decoración. Es importante porque reúne pintura y talla dorada del periodo colonial.</p>
+                    <p class="fuente">Fuente: Lonely Planet; Corradine Angulo (Apuntes, Javeriana).</p>
+                </div>
+            </article>
+            <article class="ficha-item">
+                <figure><img src="images/dorado.jpg" alt="Retablo dorado de la capilla" loading="lazy"></figure>
+                <h3><button class="ficha" data-rotulo="FICHA 02" aria-expanded="false" aria-controls="ficha-2"><span class="nombre">Retablo de la capilla</span><span class="pista">Toca para abrir la ficha</span></button></h3>
+                <div class="ficha-detalle" id="ficha-2" hidden>
+                    <p>La cronología de Corradine Angulo registra que en 1686 se contrató el retablo de la capilla del Rosario. Su importancia está en ser una obra de talla dorada ligada a la devoción del Rosario.</p>
+                    <p class="fuente">Fuente: Corradine Angulo (Apuntes, Javeriana).</p>
+                </div>
+            </article>
+            <article class="ficha-item">
+                <figure><img src="images/retratos.jpg" alt="Retrato de un mártir dominico" loading="lazy"></figure>
+                <h3><button class="ficha" data-rotulo="FICHA 03" aria-expanded="false" aria-controls="ficha-3"><span class="nombre">Serie de mártires dominicos</span><span class="pista">Toca para abrir la ficha</span></button></h3>
+                <div class="ficha-detalle" id="ficha-3" hidden>
+                    <p>El templo conserva una serie de retratos de mártires dominicos estudiada por Carlos Rojas Cocoma. Ayuda a entender cómo la comunidad dominica representó el martirio dentro de su espacio de culto.</p>
+                    <p class="fuente">Fuente: Rojas Cocoma, Universidad Santo Tomás.</p>
+                </div>
+            </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="contenedor">
+        <div class="pie-grid">
+            <div>
+                <h2>Iglesia de Santo Domingo</h2>
+                <p>Centro histórico de Tunja, Boyacá, Colombia.</p>
+                <p>Teléfono: (+57) 608 7423606</p>
+            </div>
+            <nav aria-label="Pie de página">
+                <h2>Navegación</h2>
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="la-iglesia.html">La iglesia</a></li>
+                <li><a href="patrimonio.html">Patrimonio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="actualidad.html">Actualidad</a></li>
+                <li><a href="visita-contacto.html">Visita y contacto</a></li>
+                <li><a href="museo-virtual.html">Museo virtual</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Créditos</h2>
+                <p>Textos basados en las fuentes citadas en <a href="la-iglesia.html#fuentes">La iglesia</a>. Fotografías: ver créditos en la <a href="galeria.html">Galería</a>. Tipografías: Google Fonts.</p>
+            </div>
+        </div>
+        <p class="legal">Proyecto académico de Diseño Web · Sin vínculo oficial con la parroquia · Grupo: [nombres de los integrantes]</p>
+    </div>
+</footer>
+<script src="js/principal.js"></script>
+</body>
+</html>
